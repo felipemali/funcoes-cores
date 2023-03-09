@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funções de cores</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Usando RGBA</h1>
+    <div id="color-display-rgba"></div>
+    <div id="color-ranges-rgba">
+      <label for="red">Red</label>
+      <input type="range" name="red" id="red" value="0" min="0" max="255" />
+      <p id="value-red">0</p>
+
+      <label for="green">green</label>
+      <input type="range" name="green" id="green" value="0" min="0" max="255" />
+      <p id="value-green">0</p>
+
+      <label for="blue">blue</label>
+      <input type="range" name="blue" id="blue" value="0" min="0" max="255" />
+      <p id="value-blue"></p>
+
+      <label for="alpha">alpha</label>
+      <input
+        type="range"
+        name="alpha"
+        id="alpha"
+        value="1"
+        min="0"
+        max="1"
+        step="0.1"
+      />
+      <p id="value-alpha"></p>
+
+      <p id="color"></p>
+    </div>
+
+    <h1 id="hsl-title">Usando HSL</h1>
+    <div id="color-display-hsl"></div>
+    <div id="color-ranges-hsl">
+      <label for="hue">Hue</label>
+      <input type="range" name="hue" id="hue" value="0" min="0" max="360" />
+      <p id="value-hue">0</p>
+
+      <label for="saturation">Saturation</label>
+      <input
+        type="range"
+        name="saturation"
+        id="saturation"
+        value="0"
+        min="0"
+        max="100"
+      />
+      <p id="value-saturation">0%</p>
+
+      <label for="lightness">Lightness</label>
+      <input
+        type="range"
+        name="lightness"
+        id="lightness"
+        value="50"
+        min="0"
+        max="100"
+        step="1"
+      />
+      <p id="value-lightness">50%</p>
+
+      <p id="color-hsl"></p>
+    </div>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>
